@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/booking
+    username: booking
+    password: bookingpw
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create
+management:
+  endpoints:
+    jmx:
+      exposure:
+        include:
+          - health
+          - info
