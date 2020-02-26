@@ -1,3 +1,5 @@
+server:
+  port: 8100
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/booking
@@ -6,11 +8,4 @@ spring:
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
-      ddl-auto: create
-management:
-  endpoints:
-    jmx:
-      exposure:
-        include:
-          - health
-          - info
+      ddl-auto: none

@@ -1,6 +1,7 @@
 package tech.minkov.bookingservice.data.model;
 
 import javax.persistence.Entity;
+
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -10,7 +11,6 @@ import lombok.ToString;
 @Setter
 @ToString
 public class Meal extends MenuEntry {
-
-    private boolean vegan;
-    private boolean allergens;
+  private boolean vegan;
+  private boolean allergens;
 }
