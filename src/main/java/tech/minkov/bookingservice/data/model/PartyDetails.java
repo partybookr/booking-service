@@ -9,8 +9,6 @@ import lombok.ToString;
 @Getter
 @Setter
 @ToString
-public class Meal extends MenuEntry {
+public class PartyDetails extends AuditableEntity {
 
-  private boolean vegan;
-  private boolean allergens;
 }

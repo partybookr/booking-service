@@ -1,0 +1,22 @@
+type Query {
+    partyById(id: ID): Party
+    parties: [Party]
+}
+
+type Party {
+    id: ID
+    startTime: String
+    endTime: String
+    details: PartyDetails
+    type: String
+    createdAt: String
+    updatedAt: String
+    version: Int
+}
+
+type PartyDetails {
+    id: ID
+    createdAt: String
+    updatedAt: String
+    version: Int
+}
