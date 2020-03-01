@@ -22,7 +22,7 @@ public class DataSeeder implements CommandLineRunner {
   }
 
   @Override
-  public void run(String... args) throws Exception {
+  public void run(String... args) {
     if (partyRepository.count() == 0) {
       var party = new Party();
       party.setType(PartyType.NEON);
