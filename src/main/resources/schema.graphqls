@@ -1,6 +1,8 @@
 type Query {
-    partyById(id: ID): Party
     parties: [Party]
+    partyById(id: ID): Party
+    partyByKidName(kidName: String): [Party]
+    partyByType(partyType: String): [Party]
 }
 
 type Party {
